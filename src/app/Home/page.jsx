@@ -2,11 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 import woman from "../../../public/images/woman.jpg"
 import ProductList from "../components/productList"
+// import {useCart} from "../context/cartContext"
 
 export default function Home(){
     return (
         <>
-            <main className="lg:flex items-start justify-center px-3 md:px-10">
+            <main className="mt-20 lg:flex items-start justify-center 
+            px-3 md:px-10 lg:mt-0">
             {/* HERO SECTION */}
             <div className="tracking-wider flex flex-col space-y-7 mt-10"> 
                     <div className="hero capitalize lg:mt-20">
@@ -53,7 +55,8 @@ export default function Home(){
                 <Image 
                     src={woman} 
                     alt='Woman Glowing Face' 
-                    className="hidden lg:block w-1/2 sm:w-1/3 h-auto object-cover mt-5"
+                    className="hidden lg:block w-1/2 sm:w-1/3 h-auto 
+                    object-cover mt-20"
                 />
             </main>
 

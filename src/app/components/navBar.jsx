@@ -1,8 +1,12 @@
 'use client'
 import Link from "next/link"
 import { useState } from "react"
+import { useCart } from "../context/cartContext";
 
 export default function NavBar(){
+    const { totalItems } = useCart();
+
+    // State to manage the mobile menu toggle
     const [isClick, setIsClick] = useState(false)
 
     const toggleNavbar = () => {
@@ -11,7 +15,7 @@ export default function NavBar(){
 
     return(
         // HEADER FOR THE HEAD
-        <header className=" bg-white shadow-md px-4 md:px-10">
+        <header className="fixed top-0 w-full bg-white shadow-md px-4 md:px-10">
             <div className="flex items-center justify-between py-4">
                 {/* BRAND LOGO */}
                 <div className="logo">
@@ -59,6 +63,15 @@ export default function NavBar(){
                             1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
                             />
                         </svg>
+
+                        {/* BADGE */}
+                        {totalItems > 0 && (
+                        <span className="absolute top-2 right-2 bg-red-500 
+                        text-white text-xs w-5 h-5 flex items-center justify-center 
+                        rounded-full">
+                            {totalItems}
+                        </span>
+        )}
                     </Link>
                     {/* MOBILE MENU BUTTON */}
                     <div className="md:hidden flex items-center">

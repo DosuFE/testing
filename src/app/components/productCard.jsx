@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, onAddToCart }) {
     return (
         <article className="product-card w-full">
             <div className="bg-green-50 rounded-lg border border-green-200
@@ -36,9 +36,13 @@ export default function ProductCard({ product }) {
                     </p>
                 </div>
                 <div className="p-4">
-                    <Link href='/cart' className="bg-blue-500 text-white px-4 py-2 rounded">
+                    <button
+                        className="bg-blue-500 text-white 
+                        px-4 py-2 rounded cursor-pointer hover:bg-blue-600"
+                        onClick={() => onAddToCart(product)}
+                    >
                         Add to Cart
-                    </Link>
+                    </button>
                 </div>    
             </div>
         </article>
