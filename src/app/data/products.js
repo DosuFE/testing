@@ -173,8 +173,8 @@ const data = {
       currency: "NGN",
       size: "354ml",
       stock: 7,
-      image: "/images/products/aveeno.jpg",
-      description: "Clinically proven to improve dry skin with colloidal oatmeal formula.",
+      image: "https://images.ctfassets.net/mgaihfszrtka/tZjofWVTANpylnUqtc2w7/0aaa177957bf20a5ee2321bc1277906c/DM_Body_Lotion_-_2.5oz.webp?fm=webp&w=1024",
+      description: "Clinically proven to improve dry skin with colloidal oatmeal formula, provides 24-hour hydration.",
       rating: 4.9
     },
     {
@@ -186,7 +186,7 @@ const data = {
       currency: "NGN",
       size: "236ml",
       stock: 10,
-      image: "/images/products/cerave-cleanser.jpg",
+      image: "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/skincare/cleansers/hydrating-facial-cleanser/photos/2025/hydrating-facial-cleanser_front.jpg?rev=0dbda3ea882842279d59341505ad4a93&w=900&hash=3D916FF592FE619D485851D27C485306",
       description: "Gentle cleanser with ceramides and hyaluronic acid, suitable for normal to dry skin.",
       rating: 4.8
     },
@@ -199,7 +199,7 @@ const data = {
       currency: "NGN",
       size: "50ml",
       stock: 6,
-      image: "/images/products/neutrogena-hydro-boost.jpg",
+      image: "https://images.ctfassets.net/bcjr30vxh6td/249vyCPCWOePqx9Reg2Y7O/217ce1ad98092d44f138083ad7a1e1c0/6811047_Carousel_1.webp",
       description: "Lightweight water gel moisturizer with hyaluronic acid for intense hydration.",
       rating: 4.7
     },
@@ -212,8 +212,8 @@ const data = {
       currency: "NGN",
       size: "30ml",
       stock: 4,
-      image: "/images/products/loreal-revitalift.jpg",
-      description: "Anti-aging serum with Pro-Retinol and Vitamin C to reduce wrinkles and improve skin texture.",
+      image: "https://m.media-amazon.com/images/I/71IoE52LztL._SL1500_.jpg",
+      description: "Anti-aging serum with Pro-Retinol and Vitamin C to reduce wrinkles and improve skin texture. It is suitable for all skin types.",
       rating: 4.6
     },
     {
@@ -225,7 +225,7 @@ const data = {
       currency: "NGN",
       size: "150ml",
       stock: 15,
-      image: "/images/products/simple-facial-wash.jpg",
+      image: "https://assets.unileversolutions.com/v1/2322887.png?im=Resize,width=985,height=985",
       description: "Mild facial wash that cleanses without irritation, perfect for sensitive skin.",
       rating: 4.5
     },
@@ -238,7 +238,7 @@ const data = {
       currency: "NGN",
       size: "30ml",
       stock: 5,
-      image: "/images/products/the-ordinary-niacinamide.jpg",
+      image: "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwce8a7cdf/Images/products/The%20Ordinary/rdn-niacinamide-10pct-zinc-1pct-30ml.png?sw=800&sh=800&sm=fit",
       description: "High-strength vitamin and mineral blemish formula that reduces the appearance of pores.",
       rating: 4.8
     },
@@ -251,7 +251,7 @@ const data = {
       currency: "NGN",
       size: "50ml",
       stock: 3,
-      image: "/images/products/clinique-moisture-surge.jpg",
+      image: "https://www.clinique.com/media/export/cms/products/1200x1500/cl_sku_KPR701_1200x1500_0.png",
       description: "Gel-cream moisturizer that provides almost twice as much hydration at the end of the day as it did at the start.",
       rating: 4.9
     },
@@ -264,7 +264,7 @@ const data = {
       currency: "NGN",
       size: "200ml",
       stock: 8,
-      image: "/images/products/la-roche-posay-effaclar.jpg",
+      image: "https://www.laroche-posay.us/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-acd-laroche-posay-master-catalog/default/dw5a856f03/img/effaclargelcleanser/effaclar-facial-wash-for-oily-skin-3337872411991-1.jpg?sw=720&sh=720&sm=cut&sfrm=jpg&q=70",
       description: "Purifying gel cleanser for oily and acne-prone skin, removes impurities without drying.",
       rating: 4.7
     },
@@ -277,7 +277,7 @@ const data = {
       currency: "NGN",
       size: "118ml",
       stock: 10,
-      image: "/images/products/aveeno-positively-radiant.jpg",
+      image: "https://images.ctfassets.net/mgaihfszrtka/1sARdpF6K2BYNkqym7r18I/533e4cc59560304f871144f2e365586d/ave_381372020712_us_pos_rad_dly_moist_spf15_4oz_oobwb-min-en-us?fm=webp&w=1024",
       description: "Moisturizer with soy complex to even skin tone and texture, suitable for daily use.",
       rating: 4.6
     },
@@ -290,7 +290,7 @@ const data = {
       currency: "NGN",
       size: "453g",
       stock: 6,
-      image: "/images/products/eucerin-advanced-repair.jpg",
+      image: "https://images-1.eucerin.com/~/media/eucerin%20relaunch%20media/media-center-items/d/6/f/f484206c652c49eab0ba3e713b85f0b9-screen.jpg?mw=830&hash=37f503df48aba7ade2d19fd1c40efc9f",
       description: "Intensive body cream that provides 48-hour moisture and helps repair very dry skin.",
       rating: 4.8
     },
@@ -303,7 +303,7 @@ const data = {
       currency: "NGN",
       size: "340g",
       stock: 9,
-      image: "/images/products/cerave-moisturizing-cream.jpg",
+      image: "https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/products-v4/moisturizing-cream/cerave_moisturizing_cream_16oz_jar_front-700x875-v4.jpg?rev=db6e3c22250e4928bc749dd2c207de5b&w=900&hash=E68F77D279494CD09396613CB8496EB7",
       description: "Rich, non-greasy cream that provides all-day hydration and helps restore the protective skin barrier.",
       rating: 4.9
     },
@@ -316,7 +316,7 @@ const data = {
       currency: "NGN",
       size: "200ml",
       stock: 14,
-      image: "/images/products/hydraboost-ultra.jpg",
+      image: "https://images.ctfassets.net/bcjr30vxh6td/3vHvyqVRqHb3XymV5bpD9s/d114df6c667375041261aa6a098b66c9/6810251-SF12-Neutrogena",
       description: "Lightweight yet deeply hydrating moisturizer with hyaluronic complexes for long-lasting plumpness.",
       rating: 4.6
     },
@@ -329,7 +329,7 @@ const data = {
       currency: "NGN",
       size: "500ml",
       stock: 12,
-      image: "/images/products/ultra-repair-body-cream.jpg",
+      image: "https://www.firstaidbeauty.com/cdn/shop/files/UltraRepairCream_6oz_Lead_2000x2000_d8b2f943-720b-438d-bf22-b3a8cd497298.jpg?v=1716235447&width=600",
       description: "Rich repair cream formulated for very dry skin, with ceramides and shea butter to restore moisture.",
       rating: 4.8
     },
@@ -342,21 +342,21 @@ const data = {
       currency: "NGN",
       size: "300ml",
       stock: 20,
-      image: "/images/products/whipped-shea-body-butter.jpg",
+      image: "https://bettersheabutter.com/app/uploads/2022/02/WhippedSheaButter_Jars_Flowers_3-1-1481x1536.jpg",
       description: "Luxuriously whipped body butter that melts into skin for instant softness and long-lasting hydration.",
       rating: 4.7
     },
     {
       id: "27",
-      name: "Daily Barrier Repair Moisturizer",
-      brand: "DermalCare",
+      name: "Wrinkle Reduce Cream",
+      brand: "SkinRenew",
       categoryId: "c1",
       price: 6200,
       currency: "NGN",
       size: "75ml",
       stock: 9,
-      image: "/images/products/daily-barrier-repair.jpg",
-      description: "Fragrance-free moisturizer focused on restoring the skin barrier with ceramides and niacinamide.",
+      image: "https://fabish-theme.myshopify.com/cdn/shop/files/P11.jpg?v=1711363020&width=600",
+      description: "Anti-aging cream with peptides and antioxidants to reduce fine lines and improve skin elasticity.",
       rating: 4.7
     },
     {
@@ -368,7 +368,7 @@ const data = {
       currency: "NGN",
       size: "350ml",
       stock: 16,
-      image: "/images/products/coconut-cocoa-body-cream.jpg",
+      image: "https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F42991%2F42991_1.png&id=15589258&version=7&w=1000&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP",
       description: "Tropical-scented body cream blending coconut oil and cocoa butter for deep nourishment.",
       rating: 4.5
     },
@@ -381,7 +381,7 @@ const data = {
         currency: "NGN",
         size: "300ml",
         stock: 10,
-        image: "/images/products/organic-coconut-body-cream.jpg",
+        image: "https://drorganic.co.uk/shop/images/products/DROCCNTLTN_large@2x.jpg?t=5861721563",
         description: "Luxurious body cream made with organic coconut oil for deep hydration and a tropical scent.",
         rating: 4.8
     },
@@ -394,7 +394,7 @@ const data = {
         currency: "NGN",
         size: "250ml",
         stock: 8,
-        image: "/images/products/cocoa-bliss-body-butter.jpg",
+        image: "https://m.media-amazon.com/images/I/71oDUuGJtML._SL1500_.jpg",
         description: "Indulgent body butter with rich cocoa butter and a hint of vanilla for soft, supple skin.",
         rating: 4.9
     }, 
@@ -407,7 +407,7 @@ const data = {
         currency: "NGN",
         size: "400ml",
         stock: 14,  
-        image: "/images/products/tropical-coconut-body-lotion.jpg",
+        image: "https://img.nivea.com/-/media/miscellaneous/media-center-items/6/9/9/e0e81a585cc54a63b15c2c48450898ec-web_1010x1180_transparent_png.webp?mw=640&hash=8B839BA26E2F50047BA5AF83F769007D",
         description: "Lightweight body lotion infused with coconut water and aloe for refreshing hydration.",
         rating: 4.6
     },
@@ -420,7 +420,7 @@ const data = {
         currency: "NGN",
         size: "300ml",
         stock: 12,
-        image: "/images/products/cocoa-dream-body-cream.jpg",
+        image: "https://www.derlyneguiteau.com/cdn/shop/files/DS-_Cocoa_Dream.png?v=1749937951&width=713",
         description: "Dreamy body cream with a blend of cocoa butter and shea butter for ultimate softness.",
         rating: 4.7
     },
@@ -433,7 +433,7 @@ const data = {
         currency: "NGN",
         size: "400ml",
         stock: 18,
-        image: "/images/products/nivea-coconut-almond.jpg",
+        image: "https://img.nivea.com/-/media/miscellaneous/media-center-items/b/8/1/f3d2071b77324248b57a78722bf33192-web_1010x1180_transparent_png.webp?mw=640&hash=03D2904247749AD2A19856F8200B94D3",
         description: "Nourishing body lotion with coconut and almond extracts for smooth, hydrated skin.",
         rating: 4.6
     },
@@ -446,7 +446,7 @@ const data = {
         currency: "NGN",
         size: "350ml",
         stock: 15,
-        image: "/images/products/coconut-paradise-body-cream.jpg",
+        image: "https://i.etsystatic.com/59332670/r/il/609b9a/6830248824/il_794xN.6830248824_2plm.jpg",
         description: "Luxurious body cream with a tropical coconut scent, perfect for daily hydration.",
         rating: 4.8
     }, 
@@ -459,7 +459,7 @@ const data = {
         currency: "NGN",
         size: "250ml",
         stock: 11,
-        image: "/images/products/cocoa-coconut-body-butter.jpg",
+        image: "https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2FProducts%2F42991%2F42991_2.png&id=15829604&version=3&w=1000&bc=%23f5f5f5&ib=%23f5f5f5&q=90&imageFormat=WebP",
         description: "Rich body butter combining cocoa and coconut for deep nourishment and a heavenly scent.",
         rating: 4.9
     }, 
@@ -472,7 +472,7 @@ const data = {
         currency: "NGN",
         size: "500ml",
         stock: 5,
-        image: "/images/products/almond-herbals-super-white-lotion.jpg",
+        image: "https://imoayi.com/storage/almond-herbal-super-white-lotion.jpg",
         description: "Super white lotion with almond extracts, designed to brighten and even skin tone.",
         rating: 4.5
     },
@@ -485,7 +485,7 @@ const data = {
       currency: "NGN",
       size: "250g",
       stock: 30,
-      image: "/images/products/body-soap-protection.jpg",
+      image: "https://www.amway.com/medias/125897TR-en-US-690px-02?context=bWFzdGVyfGltYWdlc3w0NTkyM3xpbWFnZS9wbmd8c3lzLW1hc3Rlci9pbWFnZXMvaGRiL2g1YS85Njk4ODM3NTYxMzc0LzEyNTg5N1RSLWVuLVVTLTY5MHB4LTAyfDdmMzQyYzE2ODFmNTAzMTkxYzk3NTEyYmYyMzBjMDgzOWFkMzM4OGY4MmYwNDBhNjEzYjY3NTA4ODhjYWIyNDI",
       description: "Gentle antibacterial body soap that protects against germs while keeping skin moisturized.",
       rating: 4.4
     },
@@ -498,7 +498,7 @@ const data = {
       currency: "NGN",
       size: "200g",
       stock: 25,
-      image: "/images/products/herbal-body-soap.jpg",
+      image: "https://bodysecretsng.com/wp-content/uploads/2025/01/MULTIFRUIT-HERBAL-SOAP.jpg",
       description: "Nourishing body soap with herbal extracts that cleanse and revitalize the skin.",
       rating: 4.6
     },
@@ -511,7 +511,7 @@ const data = {
       currency: "NGN",
       size: "250g",
       stock: 28,
-      image: "/images/products/moisturizing-body-soap.jpg",
+      image: "https://lamifragrance.com/wp-content/uploads/2022/06/dove-purely-pampering-shea-butter-soap-800x800.jpg",
       description: "Creamy body soap that moisturizes while it cleanses, leaving skin soft and smooth.",
       rating: 4.5
     },
@@ -524,7 +524,7 @@ const data = {
       currency: "NGN",
       size: "200g",
       stock: 20,
-      image: "/images/products/exfoliating-body-soap.jpg",
+      image: "https://belhumancosmetics.com/wp-content/uploads/2021/06/belhuman-bar-soap.jpeg",
       description: "Exfoliating body soap with natural scrubs that polish the skin for a radiant look.",
       rating: 4.7
     },
@@ -537,7 +537,7 @@ const data = {
       currency: "NGN",
       size: "150g",
       stock: 15,
-      image: "/images/products/activated-charcoal-body-soap.jpg",
+      image: "https://sbmnaturales.com.ng/wp-content/uploads/2024/10/IMG_0804-scaled-1.jpeg",
       description: "Detoxifying body soap with activated charcoal that draws out impurities and unclogs pores.",
       rating: 4.8
     },
@@ -550,7 +550,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 18,
-      image: "/images/products/cucumber-melon-body-soap.jpg",
+      image: "https://i.ebayimg.com/images/g/DugAAOSwX41n9pZB/s-l1600.webp",
       description: "Refreshing body soap with cucumber and melon extracts for a cool, revitalizing cleanse.",
       rating: 4.6
     },
@@ -563,7 +563,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 22,
-      image: "/images/products/lavender-dreams-body-soap.jpg",
+      image: "https://naturalamor.com/cdn/shop/products/20210830-_DSF5578_1800x1800.jpg?v=1653338296",
       description: "Relaxing body soap with lavender extracts that soothe the mind and body.",
       rating: 4.7
     },
@@ -576,7 +576,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 19,
-      image: "/images/products/rose-vanilla-body-soap.jpg",
+      image: "https://m.media-amazon.com/images/I/312tPiJr+mL._SY300_SX300_.jpg",
       description: "Delicate body soap with rose and vanilla extracts for a luxurious bathing experience.",
       rating: 4.8
     },
@@ -589,7 +589,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 17,
-      image: "/images/products/coconut-lime-body-soap.jpg",
+      image: "https://m.media-amazon.com/images/I/41g4uy88fFL._SX300_SY300_QL70_FMwebp_.jpg",
       description: "Tropical body soap with coconut and lime extracts for an energizing cleanse.",
       rating: 4.6
     },
@@ -602,7 +602,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 20,
-      image: "/images/products/honey-almond-body-soap.jpg",
+      image: "https://www.adunniorganics.com/cdn/shop/files/BLU05534-1.jpg?v=1719245212&width=1100",
       description: "Nourishing body soap with honey and almond extracts for a moisturizing cleanse.",
       rating: 4.7
     },
@@ -615,7 +615,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 18,
-      image: "/images/products/milk-shea-butter-body-soap.jpg",
+      image: "https://i.ebayimg.com/images/g/tU8AAOSw3UFgRJnB/s-l1600.webp",
       description: "Creamy body soap with milk and shea butter that hydrates and softens the skin.",
       rating: 4.8
     },
@@ -628,7 +628,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 16,
-      image: "/images/products/oatmeal-almond-body-soap.jpg",
+      image: "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/88/2298092/1.jpg?2920",
       description: "Gentle body soap with oatmeal and almond extracts that soothe and protect the skin.",
       rating: 4.7
     },
@@ -641,7 +641,7 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 15,
-      image: "/images/products/sandalwood-jasmine-body-soap.jpg",
+      image: "https://m.media-amazon.com/images/I/71ffHhDqC+L._SL1500_.jpg",
       description: "Exotic body soap with sandalwood and jasmine extracts for a calming and aromatic cleanse.",
       rating: 4.8
     },
@@ -654,9 +654,35 @@ const data = {
       currency: "NGN",
       size: "175g",
       stock: 14,
-      image: "/images/products/vanilla-coconut-body-soap.jpg",
+      image: "https://hermosamartng.com/wp-content/uploads/2023/09/native-coconut.png",
       description: "Sweet body soap with vanilla and coconut extracts for a moisturizing and fragrant wash.",
       rating: 4.6
+    },
+    {
+      id: "51",
+      name: "Citrus Burst Body Soap",
+      brand: "Yardley",
+      categoryId: "c6",
+      price: 2800,
+      currency: "NGN",
+      size: "175g",
+      stock: 13,
+      image: "https://m.media-amazon.com/images/I/61b1d2e4JjL._SL1500_.jpg",
+      description: "Refreshing body soap with citrus extracts for an invigorating cleanse.",
+      rating: 4.7
+    },
+    {
+      id: "52",
+      name: "Lavender & Chamomile Body Soap",
+      brand: "Yardley",
+      categoryId: "c6",
+      price: 2800,
+      currency: "NGN",
+      size: "175g",
+      stock: 12,
+      image: "https://m.media-amazon.com/images/I/61b1d2e4JjL._SL1500_.jpg",
+      description: "Soothing body soap with lavender and chamomile extracts for a calming bath experience.",
+      rating: 4.8
     }
   ]
 };

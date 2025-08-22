@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import woman from "../../../public/images/woman.jpg"
 import ProductList from "../components/productList"
+import Serum from "../components/serum"
 // import {useCart} from "../context/cartContext"
 
 export default function Home(){
@@ -68,15 +69,19 @@ export default function Home(){
                 </h1>
 
                 <ProductList />
-                <Link href='/products' className="w-1/2 sm:w-1/3 bg-green-400 text-white 
-                    px-6 py-3 rounded-[50px] text-lg text-center 
+                <Link href='/products' className="mt-10
+                    w-1/2 sm:w-1/3 bg-green-400 text-white 
+                    px-6 py-3 text-lg text-center 
                     font-semibold md:text-xl lg:text-2xl hover:bg-white
                     transition-colors hover:text-green-400 hover:duration-700
                     hover:border border-green-400"
                 >
-                        See All Products
+                    See All Products
                 </Link>
             </section>
+
+            {/* SERUM COMPONENTS */}
+            <Serum/>
         </>
     )
 }

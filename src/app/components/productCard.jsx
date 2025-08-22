@@ -1,4 +1,5 @@
 import Link from "next/link";
+import generateSlug from "../lib/generateSlug";
 
 
 export default function ProductCard({ product, onAddToCart }) {
@@ -6,7 +7,7 @@ export default function ProductCard({ product, onAddToCart }) {
         <article className="product-card w-full">
             <div className="bg-green-50 rounded-lg border border-green-200
             shadow-xl hover:shadow-lg transition-shadow duration-300">
-                <Link href={`/products/${product.id}`} className="block">
+                <Link href={`/products/${generateSlug(product.name)}`} className="block">
                     <img
                         src={product.image}
                         alt={product.name}

@@ -25,7 +25,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const clearCart = () => {
-    setCart([]); // 🔥 Reset cart
+    setCart([]);
   };
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);

@@ -17,7 +17,7 @@ export default function CheckoutButton() {
       callback: function (response) {
         alert("Payment successful! Reference: " + response.reference);
 
-        // 🔥 Clear cart after payment
+        // Clear cart after payment
         clearCart();
       },
     });
@@ -31,7 +31,7 @@ export default function CheckoutButton() {
       disabled={cart.length === 0}
       className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 disabled:opacity-50"
     >
-      Checkout ₦{totalPrice}
+      Payout ₦{totalPrice}
     </button>
   );
 }
