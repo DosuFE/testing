@@ -22,6 +22,7 @@ export default function Home(){
                             text-green-400">going</h1>
                             <img 
                                 src="../../images/glow.png" alt="Glow Skin"
+                                loading="lazy"
                                 className="w-20 sm:w-40 lg:w-36 xl:w-40"
                             />
                             <h1 className="text-5xl sm:text-8xl lg:text-7xl xl:text-8xl
@@ -56,6 +57,7 @@ export default function Home(){
                 <Image 
                     src={woman} 
                     alt='Woman Glowing Face' 
+                    loading="lazy"
                     className="hidden lg:block w-1/2 sm:w-1/3 h-auto 
                     object-cover mt-20"
                 />
@@ -69,7 +71,7 @@ export default function Home(){
                 </h1>
 
                 <ProductList />
-                <Link href='/products' className="mt-10
+                <Link href='/products' className="
                     w-1/2 sm:w-1/3 bg-green-400 text-white 
                     px-6 py-3 text-lg text-center 
                     font-semibold md:text-xl lg:text-2xl hover:bg-white

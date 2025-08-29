@@ -10,7 +10,7 @@ const data = {
   products: [
     {
       id: "1",
-      name: "Organic Aloe Vera Gel",
+      name: "Aloe Vera Gel",
       brand: "AloePure",
       categoryId: "c1",
       price: 2500,
@@ -23,7 +23,7 @@ const data = {
     },
     {
       id: "2",
-      name: "Vitamin C Brightening Serum",
+      name: "Vitamin C Serum",
       brand: "BrightLabs",
       categoryId: "c2",
       price: 7500,
@@ -660,28 +660,28 @@ const data = {
     },
     {
       id: "51",
-      name: "Citrus Burst Body Soap",
+      name: "Citrus Soap",
       brand: "Yardley",
       categoryId: "c6",
       price: 2800,
       currency: "NGN",
       size: "175g",
       stock: 13,
-      image: "https://m.media-amazon.com/images/I/61b1d2e4JjL._SL1500_.jpg",
+      image: "https://www.countryhillcottage.com/wp-content/uploads/2019/06/Homemade_Citrus_Soap_Recipe_with_Melt_and_Pour_Base_and_Essential_Oils-21-01.jpg",
       description: "Refreshing body soap with citrus extracts for an invigorating cleanse.",
       rating: 4.7
     },
     {
       id: "52",
-      name: "Lavender & Chamomile Body Soap",
+      name: "Chamomile Soap",
       brand: "Yardley",
       categoryId: "c6",
       price: 2800,
       currency: "NGN",
       size: "175g",
       stock: 12,
-      image: "https://m.media-amazon.com/images/I/61b1d2e4JjL._SL1500_.jpg",
-      description: "Soothing body soap with lavender and chamomile extracts for a calming bath experience.",
+      image: "https://lovelygreens.com/wp-content/uploads/2021/07/make-natural-chamomile-soap-recipe.jpg",
+      description: "Soothing body soap with Chamomile Soap extracts for a calming bath experience.",
       rating: 4.8
     }
   ]
