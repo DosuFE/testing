@@ -8,15 +8,27 @@ import Serum from "../components/serum"
 export default function Home(){
     return (
         <>
-            <main className="mt-20 lg:flex items-start justify-center 
-            px-3 md:px-10 lg:mt-0">
+            <main 
+            className="mt-20 
+            lg:flex items-start justify-center 
+            px-3 md:px-10 lg:mt-0
+            ">
             {/* HERO SECTION */}
-            <div className="tracking-wider flex flex-col space-y-7 mt-10"> 
-                    <div className="hero capitalize lg:mt-20">
-                        <h1 className="text-5xl sm:text-8xl lg:text-7xl xl:text-8xl
-                        text-green-400">
-                            Let your skin 
-                        </h1>
+            <div 
+            className="tracking-wider 
+            flex flex-col space-y-7 mt-10
+            "> 
+                <div 
+                className="hero 
+                capitalize lg:mt-20
+                ">
+                    <h1 className="text-5xl 
+                    sm:text-8xl lg:text-7xl 
+                    xl:text-8xl
+                    text-green-400
+                    ">
+                        Let your skin 
+                    </h1>
                         <div className="flex items-center gap-2 mt-2">
                             <h1 className="text-5xl sm:text-8xl lg:text-7xl xl:text-8xl
                             text-green-400">going</h1>

@@ -1,6 +1,5 @@
 'use client'
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -13,7 +12,7 @@ export default function About() {
     }, []);
 
     if (!isClient) {
-        return null; // or a loading skeleton
+        return null;
     }
 
     return (
@@ -26,7 +25,8 @@ export default function About() {
             >
                 <div className="text-center mb-16">
                     <motion.h1 
-                        className="text-4xl font-bold text-green-600 mb-4"
+                        className="hero text-5xl 
+                        font-bold text-green-600 mt-10 mb-4"
                         initial={{ scale: 0.5 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.5 }}
