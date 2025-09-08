@@ -1,3 +1,5 @@
+import ContactCardInfo from "./contactCardInfo"
+
 export default function ContactCard() {
 
     const info = [
@@ -26,17 +28,12 @@ export default function ContactCard() {
             gap-8 w-full mt-10 mb-20"
         >
             {info.map((infos) => 
-                <div className={infos.style} key={infos.id}>
-                    <h3 className="hero text-2xl space-y-2
-                    font-medium text-green-400 tracking-wider
-                    "
-                    >
-                        {infos.title}
-                    </h3>
-                    <p className="tracking-wider text-lg">
-                        {infos.description}
-                    </p>
-                </div>
+                <ContactCardInfo 
+                    title={infos.title}
+                    description={infos.description}
+                    style={infos.style}
+                    key={infos.id}
+                />
             )}
         </div>
     )

@@ -23,7 +23,7 @@ export default function Pop({ closePopup }) {
                         Message Sent Successfully!
                     </h2>
                     <p className="text-gray-600 mb-6">
-                        Thank you for contacting us. We will get back to you shortly.
+                        Thank you for contacting us. We will get back to you shortly via e-mail.
                     </p>
                     <button
                         onClick={closePopup}

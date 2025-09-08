@@ -3,15 +3,15 @@ import Link from "next/link"
 import woman from "../../../public/images/woman.jpg"
 import ProductList from "../components/productList"
 import Serum from "../components/serum"
-// import {useCart} from "../context/cartContext"
+
 
 export default function Home(){
     return (
         <>
             <main 
-            className="mt-20 
-            lg:flex items-start justify-center 
-            px-3 md:px-10 lg:mt-0
+                className="mt-20 
+                lg:flex items-start justify-center 
+                px-3 md:px-10 lg:mt-0
             ">
             {/* HERO SECTION */}
             <div 
@@ -30,8 +30,11 @@ export default function Home(){
                         Let your skin 
                     </h1>
                         <div className="flex items-center gap-2 mt-2">
-                            <h1 className="text-5xl sm:text-8xl lg:text-7xl xl:text-8xl
-                            text-green-400">going</h1>
+                            <h1 className="text-5xl 
+                            sm:text-8xl lg:text-7xl xl:text-8xl text-green-400
+                            ">
+                                going
+                            </h1>
                             <img 
                                 src="../../images/glow.png" alt="Glow Skin"
                                 loading="lazy"
@@ -42,25 +45,30 @@ export default function Home(){
                         </div>
                     </div>
                     <p className="text-black/90 text-lg
-                    md:text-xl lg:text-2xl">
+                     md:text-xl lg:text-2xl
+                    ">
                         We want to bring to the world through our 
                         products that very special feeling joy, healthy and positive energy.
                     </p>
 
                     {/* SHOP NOW && CONTACT */}
                     <div className="flex items-center gap-2 sm:gap-4">
-                        <Link href='/products' className="w-1/2 sm:w-1/3 bg-green-400 text-white 
+                        <Link href='/products' 
+                        className="w-1/2 sm:w-1/3 bg-green-400 text-white 
                         px-6 py-3 rounded-[50px] text-lg text-center 
                         font-semibold md:text-xl lg:text-2xl hover:bg-white
                         transition-colors hover:text-green-400 hover:duration-700
-                        hover:border border-green-400">
+                        hover:border border-green-400
+                        ">
                             Shop Now
                         </Link>
-                        <Link href='/contact' className="w-1/2 sm:w-1/3 border border-green-400 
+                        <Link href='/contact' 
+                        className="w-1/2 sm:w-1/3 border border-green-400 
                         text-green-400 px-4
                         sm:px-6 py-3 rounded-[50px] text-lg text-center 
                         font-semibold md:text-xl lg:text-2xl hover:bg-green-400 
-                        hover:text-white transition-colors hover:duration-700">
+                        hover:text-white transition-colors hover:duration-700
+                        ">
                             Contact Us
                         </Link>
                     </div>

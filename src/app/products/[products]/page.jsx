@@ -1,14 +1,13 @@
-// src/app/products/[products]/page.jsx
 "use client";
 
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import data from "../../data/products";
-import Image from "next/image";
 import { useCart } from "../../context/cartContext";
 import Link from "next/link";
 import formatPrice from "../../lib/formatPrice";
 import generateSlug from "../../lib/generateSlug";
+import Order from "@/app/components/order";
 
 export default function ProductDetails() {
   const { products } = useParams();
@@ -23,11 +22,11 @@ export default function ProductDetails() {
   }, [products]);
 
   if (!product) {
-    return <p className="text-center mt-20 text-xl">Product not found.</p>;
+    return <p className="hero text-red-600 text-center mt-20 text-3xl">Product not found.</p>;
   }
 
   return (
-    <div className="container mx-auto p-4 mt-20">
+    <div className="container mx-auto p-4 my-20">
       <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center">
         <div className=" ">
           <img
@@ -47,12 +46,23 @@ export default function ProductDetails() {
           <p className="text-lg text-gray-600">Size: {product.size}</p>
           <p className="text-lg text-gray-600">Stock: {product.stock}</p>
           <p className="text-lg text-yellow-500">Rating: {product.rating} ★</p>
-          <button
-            onClick={() => addToCart(product)}
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors mt-4"
-          >
-            Add to Cart
-          </button>
+
+          <div className="flex items-center gap-x-3 mt-4">
+            <button
+              onClick={() => addToCart(product)}
+              className="bg-blue-500 text-white px-6 py-3 rounded-lg 
+              hover:bg-blue-600 transition-colors cursor-pointer"
+            >
+              Add to Cart
+            </button>
+
+            <Link href='/cart'
+              className="bg-blue-500 text-center text-white px-6 py-3 rounded-lg 
+              hover:bg-blue-600 transition-colors cursor-pointer"
+            >
+              Make Payment
+            </Link>
+          </div>
           <div className="mt-3">
             <Link href="/products" className="text-green-500 hover:underline">
               ← Back to Products
@@ -60,6 +70,8 @@ export default function ProductDetails() {
           </div>
         </div>
       </div>
+
+      <Order/>
     </div>
   );
-}
+};

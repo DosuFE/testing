@@ -16,12 +16,13 @@ export default function ProductCard({ product, onAddToCart }) {
                     />
                 </Link>
                 <div className="px-4 py-2 flex-grow flex flex-col">
-                    <h4 className="text-lg font-semibold text-green-400 tracking-wide
+                    <Link href={`/products/${generateSlug(product.name)}`}
+                        className="text-lg font-semibold text-green-400 tracking-wide
                         hover:text-green-600 transition-colors duration-200 cursor-pointer 
                         hover:underline hover:underline-offset-2 hover:decoration-2 
                         hover:decoration-green-400 truncate">
                         {product.name}
-                    </h4>
+                    </Link>
                     <p className="text-gray-600 pt-2 text-sm line-clamp-2 flex-grow">
                         {product.description}
                     </p>
@@ -37,15 +38,24 @@ export default function ProductCard({ product, onAddToCart }) {
                         Rating: {product.rating} ★
                     </p>
                 </div>
-                <div className="p-4 mt-auto">
-                    <button
-                        className="bg-blue-500 text-white w-full
+                <div className="p-4 mt-auto
+                    flex items-center justify-between gap-x-2"
+                >
+                    <button className="bg-blue-500 text-white w-full
                         px-4 py-2 rounded cursor-pointer hover:bg-blue-600
                         transition-colors duration-200"
                         onClick={() => onAddToCart(product)}
                     >
                         Add to Cart
                     </button>
+
+                    <Link href={`/products/${generateSlug(product.name)}`}
+                        className="bg-blue-500 text-white w-full text-center
+                        px-4 py-2 rounded cursor-pointer hover:bg-blue-600
+                        transition-colors duration-200"
+                    >
+                        Order Now
+                    </Link>
                 </div>    
             </div>
         </article>
