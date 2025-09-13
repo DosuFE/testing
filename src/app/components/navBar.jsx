@@ -2,20 +2,31 @@
 import Link from "next/link"
 import { useState } from "react"
 import { useCart } from "../context/cartContext";
+import Search from "./search";
+import SearchResults from './searchResults'
+import data from "../data/products";
+
 
 export default function NavBar(){
     const { totalItems } = useCart();
 
     // State to manage the mobile menu toggle
-    const [isClick, setIsClick] = useState(false)
+    const [isClick, setIsClick] = useState(false);
+    const [searchProduct, setSearchProduct] = useState('');
 
     const toggleNavbar = () => {
         setIsClick(!isClick)
     }
 
+    // Search Bar Filter Method
+    const filteredProduct = data.products.filter((item) =>
+        item.name.toLowerCase().includes(searchProduct.toLowerCase()) ||
+        item.brand.toLowerCase().includes(searchProduct.toLowerCase()) ||
+        item.description.toLowerCase().includes(searchProduct.toLowerCase())
+    );
+
     return(
-        // HEADER FOR THE HEAD
-        <header className="fixed top-0 w-full bg-white shadow-md px-4 md:px-10">
+        <header className="fixed top-0 w-full bg-white shadow-md px-4 md:px-10 z-50">
             <div className="flex items-center justify-between py-4">
                 {/* BRAND LOGO */}
                 <div className="logo">
@@ -25,9 +36,10 @@ export default function NavBar(){
                         Solace SkinCare
                     </Link>
                 </div>
-                {/* NAVIGATION LINKS */}
+
+                {/* DESKTOP NAVIGATION */}
                 <nav className="hidden text-xl md:block">
-                    <ul className="flex gap-4">
+                    <ul className="flex items-center gap-4">
                         <li>
                             <Link href='/products' className="text-black hover:text-green-500">
                                 Products
@@ -42,6 +54,20 @@ export default function NavBar(){
                             <Link href='/about' className="text-black hover:text-green-500">
                                 About Us
                             </Link>
+                        </li>
+                        <li className="relative">
+                            {/*Search Input Fields Props */}
+                            <Search
+                                searchProduct={searchProduct}
+                                setSearchProduct={setSearchProduct}
+                            />
+                            {/* Search Result Fields */}
+                            {searchProduct.length > 0 && (
+                                <SearchResults 
+                                    filteredProducts={filteredProduct} 
+                                    setSearchProduct={setSearchProduct}
+                                />
+                            )}
                         </li>
                     </ul>
                 </nav>
@@ -66,12 +92,12 @@ export default function NavBar(){
 
                         {/* BADGE */}
                         {totalItems > 0 && (
-                        <span className="absolute top-2 right-2 bg-red-500 
-                        text-white text-xs w-5 h-5 flex items-center justify-center 
-                        rounded-full">
-                            {totalItems}
-                        </span>
-        )}
+                            <span className="absolute top-2 right-2 bg-red-500 
+                            text-white text-xs w-5 h-5 flex items-center justify-center 
+                            rounded-full">
+                                {totalItems}
+                            </span>
+                        )}
                     </Link>
                     {/* MOBILE MENU BUTTON */}
                     <div className="md:hidden flex items-center">
@@ -92,22 +118,35 @@ export default function NavBar(){
                     </div>
                 </div>
             </div>
-                {/* MOBILE NAVIGATION */}
-                {isClick && (
-                    <div className="md:hidden text-xl">
-                        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                            <Link href='/products' className="text-black block hover:text-green-500 rounded-lg p-2">
-                                Products
-                            </Link>
-                            <Link href='/contact' className="text-black block hover:text-green-500 rounded-lg p-2">
-                                Contacts
-                            </Link>
-                            <Link href='/about' className="text-black block hover:text-green-500 rounded-lg p-2">
-                                About Us
-                            </Link>
+
+            {/* MOBILE NAVIGATION */}
+            {isClick && (
+                <div className="md:hidden text-xl">
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <Link href='/products' className="text-black block hover:text-green-500 rounded-lg p-2">
+                            Products
+                        </Link>
+                        <Link href='/contact' className="text-black block hover:text-green-500 rounded-lg p-2">
+                            Contacts
+                        </Link>
+                        <Link href='/about' className="text-black block hover:text-green-500 rounded-lg p-2">
+                            About Us
+                        </Link>
+                        <div className="relative p-2">
+                            <Search
+                                searchProduct={searchProduct}
+                                setSearchProduct={setSearchProduct}
+                            />
+                            {searchProduct.length > 0 && (
+                                <SearchResults 
+                                    filteredProducts={filteredProduct} 
+                                    setSearchProduct={setSearchProduct}
+                                />
+                            )}
                         </div>
                     </div>
-                )}
+                </div>
+            )}
         </header>
     )
 }

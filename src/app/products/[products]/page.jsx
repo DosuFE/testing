@@ -28,7 +28,7 @@ export default function ProductDetails() {
   return (
     <div className="container mx-auto p-4 my-20">
       <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center">
-        <div className=" ">
+        <div>
           <img
             src={product.image}
             alt={product.name}

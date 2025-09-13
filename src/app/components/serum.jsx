@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Serum(){
     return(
         <>
-            <main className="mt-10 flex flex-col items-center gap-x-1
+            <main className="mt-10 mb-20 flex flex-col items-center gap-x-1
             lg:items-start justify-center lg:gap-10 lg:px-20 md:flex-row">
                 <div>
                     <img 
